@@ -11,6 +11,7 @@ class WhatsappSale(models.Model):
     def whatsapp_customer(self):
         if not self.partner_mobile:
             raise ValidationError('Customer has no mobile phone')
+        message = "Dear client please check your invoice and approve it:"
         message_whatsapp = "https://wa.me/%s?text=%s" % (self.partner_mobile, 'hello this is the message')
         return {
             'type': 'ir.actions.act_url',

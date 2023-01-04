@@ -14,7 +14,8 @@
         'sale'
     ],
     'data': [
-    'views/whatsapp_sale_view.xml'
+        'views/whatsapp_sale_view.xml',
+        'views/whatsapp_contact_view.xml'
     ],
     'demo': [],
     'qweb': [],
