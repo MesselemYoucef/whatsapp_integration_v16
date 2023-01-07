@@ -5,9 +5,10 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
+<!--            attrs="{'invisible': [('state', '!=', 'sale')]}"-->
             <header>
                 <button name="whatsapp_customer" type="object" string="Share in whatsapp" data-hotkey="w"
-                        class="oe_highlight" icon="fa-whatsapp"/>
+                        class="oe_highlight" icon="fa-whatsapp" />
             </header>
             <field name="partner_id" position="after">
                 <field name="partner_mobile"/>
